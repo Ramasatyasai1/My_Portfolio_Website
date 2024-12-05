@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submissions</title>
+</head>
+<body>
+    <h1>Contact Form Submissions</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+        </tr>
+        {% for submission in submissions %}
+        <tr>
+            <td>{{ submission['id'] }}</td>
+            <td>{{ submission['name'] }}</td>
+            <td>{{ submission['email'] }}</td>
+            <td>{{ submission['message'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
